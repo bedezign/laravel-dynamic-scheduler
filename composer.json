@@ -1,0 +1,14 @@
+{
+    "name": "bedezign/laravel-scheduler",
+    "description": "Dynamic scheduler for laravel",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^5.5"
+    },
+    "authors": [
+        {
+            "name": "Steve Guns",
+            "email": "Steve@bedezign.com"
+        }
+    ]
+}
