@@ -1,5 +1,6 @@
 {
-    "name": "bedezign/laravel-scheduler",
+    "name": "bedezign/laravel-dynamic-scheduler",
+    "license": "MIT",
     "description": "Dynamic scheduler for laravel",
     "type": "library",
     "require": {
@@ -10,5 +11,17 @@
             "name": "Steve Guns",
             "email": "Steve@bedezign.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "BEDeZign\\DynamicScheduler": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BEDeZign\\DynamicScheduler\\ServiceProvider"
+            ]
+        }
+    }
 }
