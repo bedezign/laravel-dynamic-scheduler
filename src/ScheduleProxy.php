@@ -38,8 +38,12 @@ class ScheduleProxy
         $this->restart();
     }
 
-    public static function proxy(Schedule $schedule)
+    public static function proxy(Schedule $schedule = null)
     {
+        if (null === $schedule) {
+            $schedule = app(Schedule::class);
+        }
+
         $proxy           = new self;
         $proxy->schedule = $schedule;
         return $proxy;
