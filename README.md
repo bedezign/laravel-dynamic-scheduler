@@ -48,7 +48,7 @@ The method is similar, I usually create the event I want manually. After that I 
 
 ```
 $scheduler = ScheduleProxy::proxy();
-$scheduler->job(MyDynamiclyCalledJob::class);
+$scheduler->job(MyDynamicallyCalledJob::class);
 with(new TextToSchedule($scheduler))->apply('weekdays, every 10 minutes');
 with($scheduler->getTask())->save();
 ```
